@@ -47,6 +47,7 @@ nav {
 .bg-custom-li {
     background: rgba(216, 216, 216, 0.877);
 }
+
 .top-name {
     /* font-family: 'Encode Sans', sans-serif; */
     font-family: 'Encode Sans Condensed', sans-serif;
@@ -81,8 +82,24 @@ nav {
     text-align: center;
 }
 
+.border-primary {
+    border-color: #B80034 !important;
+}
 
+.box-part {
+    background: #FFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 30px 0;
+}
 
+.box-part >.title {
+    padding: 1rem 0;
+}
+
+.box-part >.text {
+    padding: 0.5rem;
+}
 
 .portfolio-section {
     background: gainsboro;
@@ -90,10 +107,10 @@ nav {
 
 @media only screen and (max-width: 1000px) {
 
-    .bg-custom-tollger{
+    .bg-custom-tollger {
         background: #3498DB;
     }
-  
+
 }
 
 
@@ -108,7 +125,7 @@ nav {
         display: block;
         height: 70%;
     }
-    
+
     .top-name {
         top: 5%;
         font-size: 2rem;
