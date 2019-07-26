@@ -32,9 +32,17 @@
  @media only screen and (max-width: 1000px) {
 
      .top-name {
-         font-size: 2rem;
+         font-size: 1.8rem;
      }
 
+     .name-description {
+         font-size: 1.4rem;
+     }
+
+     .btn-container .row a {
+         transform: scale(0.8);
+         box-sizing: border-box;
+     }
  }
 
  /*
