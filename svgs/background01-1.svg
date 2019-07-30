@@ -3,114 +3,58 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1280 495" style="enable-background:new 0 0 1280 495;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;fill:none;stroke:url(#SVGID_1_);stroke-width:2;stroke-miterlimit:10;}
-	.st1{display:none;fill:none;stroke:url(#SVGID_2_);stroke-width:2;stroke-miterlimit:10;}
-	.st2{display:none;fill:none;stroke:url(#SVGID_3_);stroke-width:2;stroke-miterlimit:10;}
-	.st3{display:none;fill:none;stroke:url(#SVGID_4_);stroke-width:2;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:url(#SVGID_5_);stroke-width:2;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:url(#SVGID_6_);stroke-width:2;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:url(#SVGID_7_);stroke-width:2;stroke-miterlimit:10;}
-	.st7{fill:none;stroke:url(#SVGID_8_);stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:url(#SVGID_1_);stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:url(#SVGID_2_);stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:url(#SVGID_3_);stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:url(#SVGID_4_);stroke-width:2;stroke-miterlimit:10;}
+	.st4{display:none;fill:none;stroke:url(#SVGID_5_);stroke-width:2;stroke-miterlimit:10;}
+	.st5{display:none;fill:none;stroke:url(#SVGID_6_);stroke-width:2;stroke-miterlimit:10;}
+	.st6{display:none;fill:none;stroke:url(#SVGID_7_);stroke-width:2;stroke-miterlimit:10;}
+	.st7{display:none;fill:none;stroke:url(#SVGID_8_);stroke-width:2;stroke-miterlimit:10;}
 	.st8{display:none;}
 	.st9{display:inline;stroke:#000000;stroke-miterlimit:10;}
+	.st10{fill:none;}
 </style>
-
-
-	<defs>
-      <!-- We set the filter effect area to be really big to guarantee we see it all... -->
-      <!-- <filter id="white-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
-          <feFlood result="flood" flood-color="#0f09" flood-opacity="1"></feFlood>
-          <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
-          <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
-          <feGaussianBlur in="dilated" result="blurred" stdDeviation="5"></feGaussianBlur>
-          <feMerge>
-              <feMergeNode in="blurred"></feMergeNode>
-              <feMergeNode in="SourceGraphic"></feMergeNode>
-          </feMerge>
-      </filter> -->
-
-      <!-- The only difference in this filter is its "flood-color" -->
-      <!-- <filter id="purple-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
-          <feFlood result="flood" flood-color="#7d26cd" flood-opacity="1"></feFlood>
-          <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
-          <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
-          <feGaussianBlur in="dilated" result="blurred" stdDeviation="5"></feGaussianBlur>
-          <feMerge>
-              <feMergeNode in="blurred"></feMergeNode>
-              <feMergeNode in="SourceGraphic"></feMergeNode>
-          </feMerge>
-      </filter> -->
-          <!-- We set the filter effect area to be really big to guarantee we see it all... -->
-        <linearGradient id='lgrad' x1='50%' y1='100%' x2='50%' y2='0%' > 
-    <stop offset='0%' style='stop-color:rgb(73, 0, 100);stop-opacity:1' />
-    <!-- <stop offset='12%' style='stop-color:rgb(250,141,95);stop-opacity:1' />
-    <stop offset='25%' style='stop-color:rgb(247,176,94);stop-opacity:1' />
-    <stop offset='37%' style='stop-color:rgb(255,231,191);stop-opacity:1' />
-    <stop offset='50%' style='stop-color:rgb(255,253,209);stop-opacity:1' />
-    <stop offset='67%' style='stop-color:rgb(255,231,191);stop-opacity:1' />
-    <stop offset='75%' style='stop-color:rgb(247,176,94);stop-opacity:1' />
-    <stop offset='87%' style='stop-color:rgb(250,141,95);stop-opacity:1' /> -->
-    <stop offset='100%' style='stop-color:rgb(200, 0, 46);stop-opacity:1' />
-</linearGradient> 
-
-    <rect  filter="url(#green-blue-orangeGlow)"  width='105%' height='80%'  y='10%' x='-5%' fill='url(#lgrad)' id='gradientRect'></rect>
-  <filter  id='green-blue-orangeGlow' width='150%' height='150%' x='-25%' y='-25%'>
-    <!--     Thicken out the original shape     -->
-    <feMorphology  in='SourceAlpha' operator='dilate' radius='1.5' result='thickenR'></feMorphology>
- <feGaussianBlur  in='thickenR' result='blurredR' stdDeviation='10'></feGaussianBlur> 
- <feFlood result='floodR' flood-color='#ffffff'/>
- <feComposite in='floodR' in2='blurredR' operator='in' result='filledBlur'/>
- <feImage xlink:href="#gradientRect" result="gRectangle"/>
-<feComposite  in='gRectangle' in2='filledBlur' operator='in' result='finalBlur'/>
-
-    <feMerge>           
-         <feMergeNode  in='finalBlur'></feMergeNode>
-        <feMergeNode  in='SourceGraphic'></feMergeNode>
-    <!--        <feMergeNode  in='softGlow_coloredO'></feMergeNode>  -->
-    </feMerge>
-</filter>
-
-    </defs>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-707.3135" y1="806.5657" x2="-426.0668" y2="989.2094" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 618.7021 -787.132)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="282.4" y="132.2" transform="matrix(0.3746 -0.9272 0.9272 0.3746 17.7514 531.2003)" class="st0" width="240.4" height="240.4"/>
+<rect x="282.4" y="132.2" transform="matrix(0.3746 -0.9272 0.9272 0.3746 17.7514 531.2003)" class="st0" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-729.442" y1="797.445" x2="-448.1953" y2="980.0888" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 603.3123 -772.6802)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="289.3" y="155.5" transform="matrix(0.3746 -0.9272 0.9272 0.3746 0.4764 552.1144)" class="st1" width="240.4" height="240.4"/>
+<rect x="289.3" y="155.5" transform="matrix(0.3746 -0.9272 0.9272 0.3746 0.4764 552.1144)" class="st1" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-659.2653" y1="841.3629" x2="-378.0186" y2="1024.0066" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 647.287 -830.9453)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="252.3" y="80.1" transform="matrix(0.3746 -0.9272 0.9272 0.3746 47.2596 470.6353)" class="st2" width="240.4" height="240.4"/>
+<rect x="252.3" y="80.1" transform="matrix(0.3746 -0.9272 0.9272 0.3746 47.2596 470.6353)" class="st2" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-681.4473" y1="832.3245" x2="-400.2006" y2="1014.9683" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 631.897 -816.4934)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="259.1" y="103.4" transform="matrix(0.3746 -0.9272 0.9272 0.3746 29.8751 491.5727)" class="st3" width="240.4" height="240.4"/>
-<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="1.5909" y1="173.3751" x2="282.8376" y2="356.0189" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 937.8118 173.9679)">
+<rect x="259.1" y="103.4" transform="matrix(0.3746 -0.9272 0.9272 0.3746 29.8751 491.5727)" class="st3" width="240.4" height="240.4"/>
+<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-0.6709" y1="158.4443" x2="280.5758" y2="341.0881" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 937.8118 173.9679)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="531.4" y="145.4" transform="matrix(0.3746 -0.9272 0.9272 0.3746 161.2807 770.2953)" class="st4" width="240.4" height="240.4"/>
-<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-20.5376" y1="164.2545" x2="260.709" y2="346.8983" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 922.4219 188.4198)">
+<rect x="543.4" y="136.2" transform="matrix(0.3746 -0.9272 0.9272 0.3746 177.2869 775.6859)" class="st4" width="240.4" height="240.4"/>
+<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-22.7995" y1="149.3237" x2="258.4472" y2="331.9675" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 922.4219 188.4198)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="538.3" y="168.7" transform="matrix(0.3746 -0.9272 0.9272 0.3746 144.0055 791.2095)" class="st5" width="240.4" height="240.4"/>
-<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="49.6391" y1="208.1724" x2="330.8858" y2="390.8162" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 966.3967 130.1546)">
+<rect x="550.3" y="159.5" transform="matrix(0.3746 -0.9272 0.9272 0.3746 160.0117 796.6)" class="st5" width="240.4" height="240.4"/>
+<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="47.3772" y1="193.2416" x2="328.6239" y2="375.8854" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 966.3967 130.1546)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="501.3" y="93.2" transform="matrix(0.3746 -0.9272 0.9272 0.3746 190.7888 709.7303)" class="st6" width="240.4" height="240.4"/>
-<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="27.4572" y1="199.1341" x2="308.7039" y2="381.7777" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 951.0067 144.6065)">
+<rect x="513.3" y="84.1" transform="matrix(0.3746 -0.9272 0.9272 0.3746 206.795 715.1208)" class="st6" width="240.4" height="240.4"/>
+<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="25.1953" y1="184.2033" x2="306.442" y2="366.847" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 951.0067 144.6065)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect  filter="url(#green-blue-orangeGlow)"  x="508.1" y="116.6" transform="matrix(0.3746 -0.9272 0.9272 0.3746 173.4043 730.6677)" class="st7" width="240.4" height="240.4"/>
+<rect x="520.1" y="107.4" transform="matrix(0.3746 -0.9272 0.9272 0.3746 189.4105 736.0583)" class="st7" width="240.4" height="240.4"/>
 <g>
 	<g class="st8">
 		<path class="st9" d="M303.3,222.2v-1.3l14.5-10.2v1.4l-13.2,9.3v0.2l13.2,9.3v1.4L303.3,222.2z"/>
@@ -126,10 +70,5 @@
 		<path class="st9" d="M455.9,230.9l13.2-9.3v-0.2l-13.2-9.3v-1.4l14.5,10.2v1.3l-14.5,10.2V230.9z"/>
 	</g>
 </g>
-
-
-
-
-
-
+<polygon class="st10" points="122.4,342.2 281.5,-29.9 675.4,120.4 516.3,492.6 "/>
 </svg>
