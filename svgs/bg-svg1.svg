@@ -12,44 +12,79 @@
 	.st6{display:none;fill:none;stroke:url(#SVGID_7_);stroke-width:2;stroke-miterlimit:10;}
 	.st7{display:none;fill:none;stroke:url(#SVGID_8_);stroke-width:2;stroke-miterlimit:10;}
 </style>
+
+
+<defs>
+    
+        <linearGradient id='lgrad' x1='50%' y1='100%' x2='50%' y2='0%' > 
+    <stop offset='0%' style='stop-color:rgb(13, 150, 79);stop-opacity:1' />
+    <stop offset='100%' style='stop-color:rgb(47, 152, 205);stop-opacity:1' />
+</linearGradient> 
+
+    <rect filter="url(#green-blue-orangeGlow)" width='105%' height='80%'  y='10%' x='-5%' fill='url(#lgrad)' id='gradientRect'></rect>
+  <filter  id='green-blue-orangeGlow' width='150%' height='150%' x='-25%' y='-25%'>
+    <!--     Thicken out the original shape     -->
+    <feMorphology  in='SourceAlpha' operator='dilate' radius='1.5' result='thickenR'></feMorphology>
+ <feGaussianBlur  in='thickenR' result='blurredR' stdDeviation='10'></feGaussianBlur> 
+ <feFlood result='floodR' flood-color='#ffffff'/>
+ <feComposite in='floodR' in2='blurredR' operator='in' result='filledBlur'/>
+ <feImage xlink:href="#gradientRect" result="gRectangle"/>
+<feComposite  in='gRectangle' in2='filledBlur' operator='in' result='finalBlur'/>
+
+    <feMerge>           
+         <feMergeNode  in='finalBlur'></feMergeNode>
+        <feMergeNode  in='SourceGraphic'></feMergeNode>
+    <!--        <feMergeNode  in='softGlow_coloredO'></feMergeNode>  -->
+    </feMerge>
+</filter>
+
+    </defs>
+
+
+
+
+
+
+
+
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-8406.7754" y1="-2770.2395" x2="-8125.5283" y2="-2587.5957" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 -7598.502 -3589.5618)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect x="88.7" y="105.2" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -78.387 334.674)" class="st0" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="88.7" y="105.2" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -78.387 334.674)" class="st0" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-8428.9033" y1="-2779.3604" x2="-8147.6572" y2="-2596.7166" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 -7613.8916 -3575.1099)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect x="95.6" y="128.5" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -95.6621 355.5882)" class="st1" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="95.6" y="128.5" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -95.6621 355.5882)" class="st1" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-8358.7266" y1="-2735.4424" x2="-8077.4805" y2="-2552.7986" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 -7569.917 -3633.375)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect x="58.5" y="53.1" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -48.8789 274.109)" class="st2" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="58.5" y="53.1" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -48.8789 274.109)" class="st2" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-8380.9092" y1="-2744.4807" x2="-8099.6621" y2="-2561.8372" gradientTransform="matrix(-0.7194 -0.6947 -0.6947 0.7194 -7585.3071 -3618.9231)">
 	<stop  offset="0" style="stop-color:#00A945"/>
 	<stop  offset="1" style="stop-color:#3498DB"/>
 </linearGradient>
-<rect x="65.4" y="76.4" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -66.2634 295.0464)" class="st3" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="65.4" y="76.4" transform="matrix(0.3746 -0.9272 0.9272 0.3746 -66.2634 295.0464)" class="st3" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-8589.3125" y1="3207.1892" x2="-8308.0654" y2="3389.833" gradientTransform="matrix(-0.766 0.6428 0.6428 0.766 -8383.0977 3129.4412)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect x="88.7" y="105.2" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -83.7178 319.4697)" class="st4" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="88.7" y="105.2" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -83.7178 319.4697)" class="st4" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-8611.4648" y1="3198.106" x2="-8330.2188" y2="3380.7498" gradientTransform="matrix(-0.766 0.6428 0.6428 0.766 -8387.374 3173.9453)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect x="95.5" y="128.5" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -100.8363 339.1256)" class="st5" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="95.5" y="128.5" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -100.8363 339.1256)" class="st5" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="-8541.3018" y1="3242.0442" x2="-8260.0547" y2="3424.688" gradientTransform="matrix(-0.766 0.6428 0.6428 0.766 -8398.8789 3019.7847)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect x="58.5" y="53.1" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -53.8494 262.0428)" class="st6" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="58.5" y="53.1" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -53.8494 262.0428)" class="st6" width="240.4" height="240.4"/>
 <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="-8563.4463" y1="3232.9492" x2="-8282.2002" y2="3415.593" gradientTransform="matrix(-0.766 0.6428 0.6428 0.766 -8403.1563 3064.2888)">
 	<stop  offset="0" style="stop-color:#3D006A"/>
 	<stop  offset="1" style="stop-color:#D40029"/>
 </linearGradient>
-<rect x="65.4" y="76.4" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -71.0746 281.7126)" class="st7" width="240.4" height="240.4"/>
+<rect filter="url(#green-blue-orangeGlow)" x="65.4" y="76.4" transform="matrix(0.4226 -0.9063 0.9063 0.4226 -71.0746 281.7126)" class="st7" width="240.4" height="240.4"/>
 </svg>
