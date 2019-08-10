@@ -5,62 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e904edaf7b.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <title>Miran Kamal</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-inverse  fixed-top">
-        <button class="navbar-toggler custom-tollger" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="nav m-2">
-                <li class="nav-item bg-custom-li  mr-auto">
-                    <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item bg-custom-li">
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item">
                     <a class="nav-link " href="mailto:miran.kamal.099@gmail.com">Contact</a>
                 </li>
-                <li class="nav-item bg-custom-li">
+                <li class="nav-item">
                     <a class="nav-link " href="https://www.github.com/mirankm">Projects</a>
                 </li>
-                <a class="nav-link " href="Miran Kamal.pdf" download> <span><i class="fas fa-arrow-down"></i>Resume
-                    </span></a>
+               <li class="nav-link">
+                <li class="nav-item">
+                    <a class="nav-link " href="Miran Kamal.pdf">Resume CV <i class="fas fa-arrow-down"></i></span></a>
                 </li>
+               <li class="nav-link">
+                    <!-- <a href="Miran Kamal.pdf" download> <span><i class="fas fa-arrow-down"></i></span></a> -->
+               </li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <section class="top-section">
-        <div class="top-div">
-            <h2 class="top-name">
-                &lt; Miran Kamal &gt;
-            </h2>
-            <p class="name-description">Android Mobile application and Web developer.</p>
-
-            <div class="btn-container">
-                <div class="row">
-                    <a class="col-sm btn btn-primary btn-lg contact-btn-position"
-                        href="mailto:miran.kamal.099@gmail.com"> Contact Me <i class="far fa-envelope"></i></a>
-                    <a class="col-sm btn btn-primary-2 btn-lg contact-btn-position"
-                        href="https://www.github.com/mirankm"> See my work <i class="fas fa-code"></i></a>
-                </div>
-
+        <div class="top-part">
+            <h2 class="person-name">&lt;Miran Kamal&gt;</h2>
+            <p class="person-description">Android Mobile application and Web developer.</p>
+        </div>
+        <div class="bottom-part">
+            <div class="row">
+                <a class="col-sm btn btn-primary btn-lg contact-btn-position" href="mailto:miran.kamal.099@gmail.com">
+                    Contact Me <i class="far fa-envelope"></i></a>
+                <a class="col-sm btn btn-primary-2 btn-lg contact-btn-position" href="https://www.github.com/mirankm">
+                    See my work <i class="fas fa-code"></i></a>
             </div>
         </div>
-    <hr style="background: linear-gradient(to right, #C03A9B, #EB334F,#FDA647); height: 2px;">
+
+        <!-- <hr style="background: linear-gradient(to right, #C03A9B, #EB334F,#FDA647); height: 2px; width: 500px;"> -->
+         <div class="main-flex">
+
+            <div class="project-card">
+                <h1>Project name</h1>
+                <p>project description which is longer then 10 words and this text is place holder</p>
+            </div>
+            <div class="project-card">
+                <h1>Project name</h1>
+                <p>project description which is longer then 10 words and this text is place holder</p>
+            </div>
+            <div class="project-card">
+                <h1>Project name</h1>
+                <p>project description which is longer then 10 words and this text is place holder</p>
+            </div>
+        </div> 
 
     </section>
+
+
+
 
 
     <!-- <div style="width: 100%;box-sizing: border-box; text-align: center">
@@ -70,17 +80,18 @@
 
 
     <script src="https://kit.fontawesome.com/e904edaf7b.js"></script>
-
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
