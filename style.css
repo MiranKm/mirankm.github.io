@@ -4,6 +4,7 @@
      transition: ease-in-out 0.5s;
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
 
  }
 
@@ -13,13 +14,6 @@
      background: rgb(32, 32, 32);
  }
 
-
- .centerScreen {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
- }
 
  .top-section {
      display: flex;
@@ -83,12 +77,12 @@
  }
 
 
- ul {
+ nav ul {
      margin: 1rem;
      list-style: none;
  }
 
- ul>li {
+ nav ul>li {
      display: inline;
      color: white;
 
@@ -128,7 +122,11 @@
      text-align: center;
      flex-flow: row wrap;
      justify-content: center;
+ }
 
+ .project-part {
+     margin: 0 auto;
+     width: 80%;
  }
 
  .project-card {
@@ -136,25 +134,157 @@
      padding: 1rem;
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: space-evenly;
      border-radius: 2px;
      width: 18%;
-     background:linear-gradient(135deg, #C03A9B 0%,#FDA647 100%);
+     background: whitesmoke;
+     /* background: linear-gradient(135deg, #C03A9B 0%, #FDA647 100%); */
      /* background: linear-gradient(135deg, #0FF0B3 0%, #036ED9 100%); */
      transition: ease-in-out 0.5s;
      transform: scale(1);
 
  }
 
+ .project-card>a {
+     text-decoration: none;
+ }
+
  .project-card:hover {
      transform: scale(1.07)
  }
 
+ .project-card em,
+ .project-card p,
+ .project-card h1 {
+     margin: 6px 0;
+ }
+
+ .project-card em {
+     font-weight: 700;
+ }
+
+ .project-card a, .project-card  em, .project-card  p, .project-card  h1 {
+     color: black;
+
+ }
 
  .project-card>img {
-     width: 50%;
+     width: 70%;
      margin: 0 auto;
  }
+
+ .projects-text {
+     margin: 1rem 0;
+     display: flex;
+
+     background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
+     background-size: 600% 600%;
+     -webkit-animation: AnimationName 3s ease infinite;
+     -moz-animation: AnimationName 3s ease infinite;
+     -o-animation: AnimationName 3s ease infinite;
+     animation: AnimationName 3s ease infinite;
+
+     height: 4rem;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ footer {
+     height: 20vh;
+     margin: 1rem 0 0 0;
+     display: flex;
+     background-size: 600% 600%;
+     justify-content: center;
+     align-items: center;
+
+     background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
+     background-size: 600% 600%;
+
+     -webkit-animation: AnimationName 3s ease infinite;
+     -moz-animation: AnimationName 3s ease infinite;
+     -o-animation: AnimationName 3s ease infinite;
+     animation: AnimationName 3s ease infinite;
+
+
+ }
+
+
+ @-webkit-keyframes AnimationName {
+     0% {
+         background-position: 48% 0%
+     }
+
+     50% {
+         background-position: 53% 100%
+     }
+
+     100% {
+         background-position: 48% 0%
+     }
+ }
+
+ @-moz-keyframes AnimationName {
+     0% {
+         background-position: 48% 0%
+     }
+
+     50% {
+         background-position: 53% 100%
+     }
+
+     100% {
+         background-position: 48% 0%
+     }
+ }
+
+ @-o-keyframes AnimationName {
+     0% {
+         background-position: 48% 0%
+     }
+
+     50% {
+         background-position: 53% 100%
+     }
+
+     100% {
+         background-position: 48% 0%
+     }
+ }
+
+ @keyframes AnimationName {
+     0% {
+         background-position: 48% 0%
+     }
+
+     50% {
+         background-position: 53% 100%
+     }
+
+     100% {
+         background-position: 48% 0%
+     }
+ }
+
+ footer ul {
+     width: 80%;
+     list-style: none;
+     text-align: center;
+ }
+
+ footer ul li {
+     display: inline-block;
+     font-size: 1.2rem;
+     margin: 4px;
+     padding: 4px;
+ }
+
+
+ footer ul li span {
+     font-weight: 500;
+ }
+
+
 
  @media only screen and (max-width: 600px) {
 
@@ -165,7 +295,6 @@
      .person-description {
          font-size: 1.4rem;
      }
-
 
      .project-card {
          width: 70%;
