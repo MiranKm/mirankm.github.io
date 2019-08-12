@@ -30,9 +30,10 @@
  }
 
  .top-part {
-     margin:  2rem 0;
+     margin: 2rem 0;
      display: flex;
      flex-flow: column wrap;
+     margin-top: 100px;
  }
 
  .bottom-part {
@@ -41,6 +42,7 @@
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
+     margin-bottom: 2rem;
  }
 
  /* .top-section {
@@ -99,7 +101,7 @@
  .btn-primary-2 {
      padding: 1rem 2rem;
      margin: 1rem;
-     border-radius: 4px;
+     border-radius: 2px;
      border: none;
      color: white !important;
      transition: ease-in-out 0.3s;
@@ -137,7 +139,8 @@
      justify-content: center;
      border-radius: 2px;
      width: 18%;
-     background: #F5F5F5;
+     background:linear-gradient(135deg, #C03A9B 0%,#FDA647 100%);
+     /* background: linear-gradient(135deg, #0FF0B3 0%, #036ED9 100%); */
      transition: ease-in-out 0.5s;
      transform: scale(1);
 
@@ -147,11 +150,8 @@
      transform: scale(1.07)
  }
 
- .project-card>* {
-     color: black;
- }
 
- .project-card> img {
+ .project-card>img {
      width: 50%;
      margin: 0 auto;
  }
