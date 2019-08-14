@@ -6,6 +6,7 @@
      padding: 0;
      box-sizing: border-box;
 
+     text-rendering: optimizeLegibility;
  }
 
  body {
@@ -150,7 +151,7 @@
  }
 
  .project-card:hover {
-     transform: scale(1.07)
+     transform: scale(1.05)
  }
 
  .project-card em,
