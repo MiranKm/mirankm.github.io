@@ -1,46 +1,45 @@
- * {
-     color: whitesmoke;
-     /* border: 1px dotted powderblue; */
-     transition: ease-in-out 0.5s;
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+* {
+  color: whitesmoke;
+  /* border: 1px dotted powderblue; */
+  transition: ease-in-out 0.5s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-     text-rendering: optimizeLegibility;
- }
+  text-rendering: optimizeLegibility;
+}
 
- body {
-     font-family: 'Source Code Pro', monospace;
-     /* background: #fcfcfc; */
-     background: rgb(32, 32, 32);
- }
+body {
+  font-family: "Source Code Pro", monospace;
+  /* background: #fcfcfc; */
+  background: rgb(32, 32, 32);
+}
 
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center;
+  text-align: center;
+}
 
- .top-section {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     place-content: center;
-     text-align: center;
- }
+.top-part {
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 100px;
+}
 
- .top-part {
-     margin: 2rem 0;
-     display: flex;
-     flex-flow: column wrap;
-     margin-top: 100px;
- }
+.bottom-part {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
- .bottom-part {
-     margin: 10px;
-     padding: 10px;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: center;
-     margin-bottom: 2rem;
- }
-
- /* .top-section {
+/* .top-section {
      text-align: center;
      position: absolute;
      transform: translate(-50%, -50%);
@@ -49,262 +48,299 @@
      z-index: 1000;
  } */
 
- /* 
+/* 
  .img-responsive {
      transform: rotate(90deg);
      margin-top: 6%;
      width: 40%;
  } */
 
+.person-name {
+  font-size: 5rem;
+}
 
- .person-name {
-     font-size: 5rem;
- }
+.person-description {
+  font-size: 3rem;
+}
 
- .person-description {
-     font-size: 3rem;
- }
+.nav-link,
+.nav-link > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 
- .nav-link,
- .nav-link>a {
-     text-decoration: none;
-     color: whitesmoke;
- }
+.nav-link:hover,
+.nav-link a:hover,
+.fa-arrow-down {
+  color: #fda647;
+}
 
- .nav-link:hover,
- .nav-link a:hover,
- .fa-arrow-down {
-     color: #FDA647;
- }
+nav ul {
+  margin: 1rem;
+  list-style: none;
+}
+
+nav ul > li {
+  display: inline;
+  color: white;
+}
+
+.btn-primary,
+.btn-primary-2 {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 2px;
+  border: none;
+  color: white !important;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+  transform: scale(1);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #c03a9b, #eb334f);
+}
+
+.btn-primary-2 {
+  background: linear-gradient(to right, #eb334f, #fda647);
+}
+
+.btn-primary:hover,
+.btn-primary-2:hover {
+  transform: scale(1.01);
+}
+
+.main-flex {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.project-part {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.project-card {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 2px;
+  width: 18%;
+  background: whitesmoke;
+  /* background: linear-gradient(135deg, #C03A9B 0%, #FDA647 100%); */
+  /* background: linear-gradient(135deg, #0FF0B3 0%, #036ED9 100%); */
+  transition: ease-in-out 0.5s;
+  transform: scale(1);
+}
+
+.project-card > a {
+  text-decoration: none;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card em,
+.project-card p,
+.project-card h1 {
+  margin: 6px 0;
+}
+
+.project-card em {
+  font-weight: 700;
+}
+
+.project-card a,
+.project-card em,
+.project-card p,
+.project-card h1 {
+  color: black;
+}
+
+.project-card > img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.projects-text {
+  margin: 1rem 0;
+  display: flex;
+
+  background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  -o-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  height: 20vh;
+  margin: 1rem 0 0 0;
+  display: flex;
+  background-size: 600% 600%;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  -o-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+
+  50% {
+    background-position: 53% 100%;
+  }
+
+  100% {
+    background-position: 48% 0%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+
+  50% {
+    background-position: 53% 100%;
+  }
+
+  100% {
+    background-position: 48% 0%;
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+
+  50% {
+    background-position: 53% 100%;
+  }
+
+  100% {
+    background-position: 48% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+
+  50% {
+    background-position: 53% 100%;
+  }
+
+  100% {
+    background-position: 48% 0%;
+  }
+}
+
+footer ul {
+  width: 80%;
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 4px;
+  padding: 4px;
+}
+
+footer ul li span {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .person-name {
+    font-size: 1.7rem;
+  }
+
+  .person-description {
+    font-size: 1.4rem;
+  }
+
+  .project-card {
+    width: 70%;
+  }
+
+  .centerScreen {
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.projects {
+    margin: 0 2rem;
+}
+.projects, .card div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
 
- nav ul {
-     margin: 1rem;
-     list-style: none;
- }
 
- nav ul>li {
-     display: inline;
-     color: white;
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 280px;
+}
 
- }
+.card div{
+    height:200px;
+}
 
-
-
-
- .btn-primary,
- .btn-primary-2 {
-     padding: 1rem 2rem;
-     margin: 1rem;
-     border-radius: 2px;
-     border: none;
-     color: white !important;
-     transition: ease-in-out 0.3s;
-     text-decoration: none;
-     transform: scale(1)
- }
-
- .btn-primary {
-     background: linear-gradient(to right, #C03A9B, #EB334F);
- }
-
- .btn-primary-2 {
-     background: linear-gradient(to right, #EB334F, #FDA647);
-
- }
-
- .btn-primary:hover,
- .btn-primary-2:hover {
-     transform: scale(1.01);
- }
-
- .main-flex {
-     display: flex;
-     text-align: center;
-     flex-flow: row wrap;
-     justify-content: center;
- }
-
- .project-part {
-     margin: 0 auto;
-     width: 80%;
- }
-
- .project-card {
-     margin: 1rem;
-     padding: 1rem;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     border-radius: 2px;
-     width: 18%;
-     background: whitesmoke;
-     /* background: linear-gradient(135deg, #C03A9B 0%, #FDA647 100%); */
-     /* background: linear-gradient(135deg, #0FF0B3 0%, #036ED9 100%); */
-     transition: ease-in-out 0.5s;
-     transform: scale(1);
-
- }
-
- .project-card>a {
-     text-decoration: none;
- }
-
- .project-card:hover {
-     transform: scale(1.05)
- }
-
- .project-card em,
- .project-card p,
- .project-card h1 {
-     margin: 6px 0;
- }
-
- .project-card em {
-     font-weight: 700;
- }
-
- .project-card a, .project-card  em, .project-card  p, .project-card  h1 {
-     color: black;
-
- }
-
- .project-card>img {
-     width: 70%;
-     margin: 0 auto;
- }
-
- .projects-text {
-     margin: 1rem 0;
-     display: flex;
-
-     background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
-     background-size: 600% 600%;
-     -webkit-animation: AnimationName 3s ease infinite;
-     -moz-animation: AnimationName 3s ease infinite;
-     -o-animation: AnimationName 3s ease infinite;
-     animation: AnimationName 3s ease infinite;
-
-     height: 4rem;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
- }
-
- footer {
-     height: 20vh;
-     margin: 1rem 0 0 0;
-     display: flex;
-     background-size: 600% 600%;
-     justify-content: center;
-     align-items: center;
-
-     background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
-     background-size: 600% 600%;
-
-     -webkit-animation: AnimationName 3s ease infinite;
-     -moz-animation: AnimationName 3s ease infinite;
-     -o-animation: AnimationName 3s ease infinite;
-     animation: AnimationName 3s ease infinite;
+.card img, .card div img{
+    max-width:100%;
+    max-height:100%;
+    height: 50%;
+}
 
 
- }
+.card * {
+  color: rgb(32, 32, 32);
+}
+
+.card a em, .card a h1, .card a p, .card div{
+    padding: 1rem;
+}
 
 
- @-webkit-keyframes AnimationName {
-     0% {
-         background-position: 48% 0%
-     }
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.012), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-     50% {
-         background-position: 53% 100%
-     }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
 
-     100% {
-         background-position: 48% 0%
-     }
- }
-
- @-moz-keyframes AnimationName {
-     0% {
-         background-position: 48% 0%
-     }
-
-     50% {
-         background-position: 53% 100%
-     }
-
-     100% {
-         background-position: 48% 0%
-     }
- }
-
- @-o-keyframes AnimationName {
-     0% {
-         background-position: 48% 0%
-     }
-
-     50% {
-         background-position: 53% 100%
-     }
-
-     100% {
-         background-position: 48% 0%
-     }
- }
-
- @keyframes AnimationName {
-     0% {
-         background-position: 48% 0%
-     }
-
-     50% {
-         background-position: 53% 100%
-     }
-
-     100% {
-         background-position: 48% 0%
-     }
- }
-
- footer ul {
-     width: 80%;
-     list-style: none;
-     text-align: center;
- }
-
- footer ul li {
-     display: inline-block;
-     font-size: 1.2rem;
-     margin: 4px;
-     padding: 4px;
- }
-
-
- footer ul li span {
-     font-weight: 500;
- }
-
-
-
- @media only screen and (max-width: 600px) {
-
-     .person-name {
-         font-size: 1.7rem;
-     }
-
-     .person-description {
-         font-size: 1.4rem;
-     }
-
-     .project-card {
-         width: 70%;
-     }
-
-     .centerScreen {
-         position: absolute;
-         top: 100%;
-         transform: translate(-50%, -50%);
-     }
-
- }
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.025), 0 10px 10px rgba(247, 0, 194, 0.623);
+}
