@@ -168,7 +168,8 @@ nav ul>li {
 }
 
 .projects-text {
-  margin: 1rem 0;
+  margin: 0;
+  padding: 1rem 0;
   display: flex;
 
   background: linear-gradient(139deg, #c03a9b, #eb334f, #fda647);
@@ -177,8 +178,6 @@ nav ul>li {
   -moz-animation: AnimationName 3s ease infinite;
   -o-animation: AnimationName 3s ease infinite;
   animation: AnimationName 3s ease infinite;
-
-  height: 4rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -186,7 +185,7 @@ nav ul>li {
 
 footer {
   height: 20vh;
-  margin: 1rem 0 0 0;
+  margin:  0;
   display: flex;
   flex-flow: column wrap;
   background-size: 600% 600%;
@@ -296,7 +295,7 @@ footer ul li span {
 }
 
 .projects {
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: 1440px;
 }
 
@@ -352,3 +351,39 @@ footer ul li span {
   transform: scale(1.01);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.025), 0 10px 10px rgba(247, 0, 194, 0.623);
 }
+
+.blog{
+  display: flex;
+  flex-flow: column nowrap;
+
+  max-width: 1300px;
+  margin:  0 auto;
+
+}
+
+.blog-card{
+  margin: 20px;
+  padding: 20px;
+}
+
+.tag-style{
+  margin: 4px;
+  background-color: #fda647;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 500px;
+  
+}
+
+.blog-date{
+  color: #c03a9b;
+}
+
+.blog-title{
+  color: white;
+}
+
+.blog-about{
+  color: green;
+}
+
